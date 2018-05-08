@@ -5,7 +5,7 @@ services:
 
 env:
   matrix:
-    - NODE_VERSION=6
+    - NODE_VER=6
 
 script:
   - make && make test

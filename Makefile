@@ -12,7 +12,7 @@ NAME = node-plus-$(NODE_VER)
 default: build
 
 build:
-	docker build -t $(REPO):$(TAG) --build-arg BASE_IMAGE_TAG=$(BASE_IMAGE_TAG) ./
+	docker build -t $(REPO):$(TAG) --build-arg BASE_IMAGE_TAG=$(NODE_VER) ./
 
 test:
 	IMAGE=$(REPO):$(TAG) echo "SKIP"
