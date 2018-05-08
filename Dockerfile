@@ -1,6 +1,6 @@
-ARG IMAGE_BASE_TAG
+ARG BASE_IMAGE_TAG
 
-FROM wodby/node:${IMAGE_BASE_TAG}
+FROM wodby/node:${BASE_IMAGE_TAG}
 
 USER root
 
