@@ -5,8 +5,7 @@ FROM wodby/node:${BASE_IMAGE_TAG}
 USER root
 
 RUN apk add --update \
-        python2 \
-        py2-pip
+      python2
 
 WORKDIR ${APP_ROOT}
 
