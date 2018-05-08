@@ -1,0 +1,13 @@
+language: bash
+
+services:
+  - docker
+
+env:
+  matrix:
+    - IMAGE_BASE_TAG=9
+    - IMAGE_BASE_TAG=8
+    - IMAGE_BASE_TAG=6
+
+script:
+  - make && make test
